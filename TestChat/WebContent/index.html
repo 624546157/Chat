@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>聊天室</title>
+<script src="JQuery/jquery-2.2.2.js"></script>
+<script src="JQuery/jquery.validate.min.js"></script>
+<script src="js/chat.js"></script>
+<link rel="stylesheet" type="text/css" href="css/chat.css" />   
+</head>
+<body>
+    <div id="chat">
+        <div id="chat-top">
+          <div id="chat-dialog">
+            <div id="chat-dialog-t">聊天室</div>
+                <div id="chat-dialog-con">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div id="chat-user">
+                <div id="chat-user-t">当前在线用户</div>
+                <div id="chat-user-con">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="chat-bottom">
+            <div id="chat-input">
+                <div id="chat-input-expr">
+                    
+                </div>
+                <div id="chat-input-edit">
+                    <div id="input-field">
+                        <textarea id="txtInput"></textarea>
+                    </div>
+                    <div id="input-btn">
+                        <input id="btnSend" type="button" value="发送" />
+                    </div>
+                </div>
+                <div id="chat-input-tip"></div>
+            </div>
+        </div>
+    </div>
+    <div id="chat-msg"></div>
+</body>
+</html>

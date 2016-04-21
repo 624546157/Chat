@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>聊天室的登陆</title>
+<script src="JQuery/jquery-2.2.2.js"></script>
+<script src="JQuery/jquery.validate.min.js"></script>
+<script src="js/login.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+<body>
+	<div id="login">
+		<div id="login_span">用户登陆</div>
+		<div id="login_main">
+			<form id="login_form">
+			<div class="login_u">
+				用户：<input type="text" name="username" id="username">
+			</div>
+			<div class="login_u">
+				密码：<input type="password" name="password" id="password">
+			</div>
+			<div class="login_u">
+				<input type="button" id="btn_login" value="登陆">
+				<input type="reset" id="btn_reset" value="取消">
+			</div>
+			<div id="otherLogin"></div>
+			</form>
+			<script type="text/javascript" id="bd_soc_login_boot"></script>
+<script type="text/javascript">
+(function(){
+  var t = new Date().getTime(),
+      script = document.getElementById("bd_soc_login_boot"),
+      redirect_uri = encodeURIComponent("http://127.0.0.1:8080/TestChat/otherLogin"),
+      domid = "otherLogin",
+      src = "http://openapi.baidu.com/social/oauth/2.0/connect/login?redirect_uri=" + redirect_uri + "&domid=" + domid + "&client_type=web&response_type=code&media_types=sinaweibo%2Cqqdenglu%2Cbaidu%2Cqqweibo&size=-1&button_type=4&client_id=cSGQQt5Wi6tUcs9zsdeEuP8k&view=embedded&t=" + t;
+    script.src = src;
+})();
+</script>
+  
+  
+		</div>
+	</div>
+	<div id="login_msg"></div>
+</body>
+</html>
